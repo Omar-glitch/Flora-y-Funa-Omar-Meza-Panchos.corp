@@ -1,0 +1,24 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 0.625rem;
+}

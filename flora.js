@@ -92,7 +92,7 @@ leerMas.addEventListener('click', () => {
 const resizing = () => {
     if (!noVisible) return;
     const s = noVisible.scrollHeight;
-    if (visible) noVisible.style.maxHeight = `${s}px`
+    if (visible) noVisible.style.maxHeight = `${s}px`;
 }
 
 window.addEventListener('resize', resizing);

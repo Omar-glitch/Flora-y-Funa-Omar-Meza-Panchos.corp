@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body{
@@ -21,4 +22,24 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background: var(--red);
     border-radius: 0.625rem;
+}
+
+@media (min-width: 720px) and (min-height: 1180px) {
+    html {font-size: 25px;}
+}
+
+@media (min-width: 760px) and (min-height: 1020px) {
+    html {font-size: 25px;}
+}
+
+@media (min-width: 1360px) and (min-height: 1000px) {
+    html {font-size: 28px;}
+}
+
+@media (min-width: 1000px) and (min-height: 1360px) {
+    html {font-size: 32px;}
+}
+
+@media (min-width: 2500px) and (min-height: 1400px) {
+    html {font-size: 42px;}
 }

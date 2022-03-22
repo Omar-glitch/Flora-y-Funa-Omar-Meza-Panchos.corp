@@ -23,6 +23,7 @@
     z-index: 9999;
     transition: right .3s, background-color .3s;
     touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .go-top > span{
@@ -132,21 +133,16 @@
     color: var(--red);
     transition: border-bottom-color .3s;
     margin-bottom: 0.625rem;
-
+    text-shadow: 0 0 0.3125rem var(--red);
     width: 100%;
     text-align: center;
-    font-size: 35px;
+    font-size: 2.1875rem;
     border-bottom: 0.1875rem solid transparent;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
-.btn-menu {
-    z-index: 3;
-}
-
-.btn-menu > i {
-    color: var(--red);
-}
-
+.btn-menu {z-index: 3;}
 .btn-menu > i {
     font-size: 1.5625rem;
     color: var(--red);
@@ -219,6 +215,8 @@
     display: grid;
     place-items: center;
     transition: background-color .3s, color .3s;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .button_border:is(:hover, :focus) {
@@ -291,7 +289,7 @@
 /**Divisor invisible**/
 .info-fauna .info-container .no-visible{
     width: 100%;
-    max-height: 0px;
+    max-height: 0rem;
     overflow: hidden;
     transition: max-height 1s;
 }
@@ -366,7 +364,7 @@
     font-size: 1.5625rem;
     font-weight: 600;
     color: var(--red);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 0.3125rem rgba(0, 0, 0, 0.2);
     border-bottom: 0.1875rem solid currentColor;
     width: 100%;
     min-width: 16.875rem;
@@ -503,6 +501,7 @@
         border-bottom-color: transparent;
         margin: 0 0.625rem;
         transform: translateY(0.1875rem);
+        text-shadow: none;
     }
 
     .menu .list-container li a:is(:focus, :hover) {
